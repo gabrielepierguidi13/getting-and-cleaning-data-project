@@ -19,17 +19,25 @@ The goal is to prepare a tidy dataset starting from the [Human Activity Recognit
 `subject`, `y` and `X` are column-bound within each set, then the two sets are
 row-bound (10299 rows, 563 columns).
 
-3. **Extracts** only the measurements on the mean and standard deviation for each
-measurement — the columns whose feature name contains `mean()` or `std()`, giving 88 variables (see `CodeBook.md` for further details).
+2. **Extracts** only the measurements on the mean and standard deviation for each
+measurement — the columns whose feature name contains `mean()` or `std()`, giving 86 variables (see `CodeBook.md` for further details).
 
-5. **Uses descriptive activity names**, replacing the codes 1–6 with `WALKING`,
+3. **Uses descriptive activity names**, replacing the codes 1–6 with `WALKING`,
 `WALKING_UPSTAIRS`, `WALKING_DOWNSTAIRS`, `SITTING`, `STANDING`, `LAYING`.
 
-7. **Labels the data set with descriptive variable names** — abbreviations are expanded
-(`t` → `Time`, `f` → `Frequency`, `Acc` → `Accelerometer`, `Gyro` → `Gyroscope`,
-  `Mag` → `Magnitude`, `std` → `StdDev`, `BodyBody` → `Body`) and invalid characters are removed.
+4. **Labels the data set with descriptive variable names** — abbreviations are expanded and invalid characters are removed.
 
-9. **Creates a second, independent tidy data set** with the average of each variable for
+  | Original variable name | New variable name |
+  |---|---|
+  | `t` | `Time`|
+  | `f` | `Frequency` |
+  | `Acc` | `Accelerometer` |
+  | `Gyro` | `Gyroscope` |
+  | `Mag` | `Magnitude` |
+  | `std` | `StdDev` |
+  | `BodyBody` | `Body` |
+
+5. **Creates a second, independent tidy data set** with the average of each variable for
 each activity and each subject (180 rows, 88 columns; see `CodeBook.md` for further details).
 ---
   

@@ -20,12 +20,22 @@ The goal is to prepare a tidy dataset starting from the [Human Activity Recognit
 row-bound (10299 rows, 563 columns).
 
 2. **Extracts** only the measurements on the mean and standard deviation for each
-measurement — the columns whose feature name contains `mean()` or `std()`, giving 86 variables (see `CodeBook.md` for further details).
+measurement. Selection is performed on the original `features.txt` names with a case-insensitive
+match on `mean` or `std`, giving a final number of 86 variables. 
 
-3. **Uses descriptive activity names**, replacing the codes 1–6 with `WALKING`,
-`WALKING_UPSTAIRS`, `WALKING_DOWNSTAIRS`, `SITTING`, `STANDING`, `LAYING`.
+3. **Uses descriptive activity names**,
 
-4. **Labels the data set with descriptive variable names** — abbreviations are expanded and invalid characters are removed.
+  | Original code | Activity name |
+  |---|---|
+  | 1 | `WALKING`|
+  | 2 | `WALKING_UPSTAIRS` |
+  | 3 | `WALKING_DOWNSTAIRS` |
+  | 4 | `SITTING` |
+  | 5 | `STANDING` |
+  | 6 | `LAYING` |
+
+4. **Labels the data set with descriptive variable names**
+(abbreviations are expanded and invalid characters are removed).
 
   | Original variable name | New variable name |
   |---|---|

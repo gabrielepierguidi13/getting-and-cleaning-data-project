@@ -23,7 +23,7 @@ row-bound (10299 rows, 563 columns).
 measurement. Selection is performed on the original `features.txt` names with a case-insensitive
 match on `mean` or `std`, giving a final number of 86 variables. 
 
-3. **Uses descriptive activity names**,
+3. **Uses descriptive activity names** (see `CodeBook.md` for further details)
 
   | Original code | Activity name |
   |---|---|
